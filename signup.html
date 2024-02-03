@@ -10,7 +10,7 @@
 
     <style>
         .top-container {
-            margin-top: 200px;
+            margin-top: 0px;
         }
         .background-container {
             width: 100vw;
@@ -26,11 +26,55 @@
             align-items: center;
             justify-content: center;
         }
+       /* Default styles for all devices */
+        section {
+            padding: 50px 100px;
+        }
+
+        /* Large devices (greater than or equal to 1200px) */
+        @media (min-width: 1200px) {
+            section {
+                padding: 200px 200px;
+            }
+        }
+
+        /* Medium devices (between 992px and 1199px) */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            section {
+                padding: 150px 150px;
+            }
+        }
+
+        /* Small devices (less than 992px) */
+        @media (max-width: 991.98px) {
+            section {
+                padding: 150px 100px;
+            }
+        }
+
+        /* Small devices (between 768px and 991px) */
+        @media (min-width: 768px) and (max-width: 991px) {
+            section {
+                /* Adjust the padding for small devices */
+                padding: 120px 70px;
+            }
+        }
+
+        /* Mobile devices (less than 768px) */
+        @media (max-width: 767px) {
+            section {
+                /* Adjust the padding for mobile devices */
+                padding: 90px 50px;
+            }
+        }
         .centered {
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .form-container {
+            margin-right: 100px;
         }
     </style>
 </head>
@@ -142,8 +186,11 @@
                     </defs>
                 </svg>
             </div>
-            <div class="col">
-                
+            <div class="col form-container">
+                <div>
+                    <h1><b>Help us know you!</b></h1>
+                    <p style="color: #908C8C;">To become a member, kindly input the required information below.</p>
+                </div>
             </div>
         </div>
     </section>
