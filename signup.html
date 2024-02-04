@@ -79,7 +79,20 @@
         .btn-container {
             text-align: right;
         }
+        .loader-container {
+            width: 100%;
+            height: 20px;
+            background-color: #f3f3f3;
+            border-radius: 4px;
+            overflow: hidden;
+            border: solid 1px rgba(0, 0, 0, 0.5);
+        }
 
+        .loader-bar {
+            height: 100%;
+            width: 50%;
+            background-color: #7FB843;
+        }
         .btn {
             color: #fffff7;
             background-color: #7FB843;
@@ -196,8 +209,11 @@
                 </svg>
             </div>
             <div class="col form-container">
-                <div>
-                    
+                <div class="mb-5">
+                    <h3><b>Become a Member</b> <span style="margin-left: 30px;">Patient Login</span> </h3>
+                    <div class="loader-container">
+                        <div class="loader-bar"></div>
+                    </div>
                 </div>
                 <div>
                     <h1><b>Help us know you!</b></h1>
